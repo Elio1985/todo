@@ -2,16 +2,16 @@ package com.todo.todo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-// import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+// import org.springframework.web.bind.annotation.RequestMapping;
 // import org.springframework.web.bind.annotation.RequestMethod;
 // import org.springframework.web.bind.annotation.RequestParam;
 
 
 @SpringBootApplication
 @RestController
-// @ComponentScan("com.todo.todo")
+@ComponentScan("com")
 public class TodoApplication {
 
 	public static void main(String[] args) {
@@ -19,10 +19,10 @@ public class TodoApplication {
 		System.out.println("reachme");
 
 	}
-	@RequestMapping(value ="/")
-	public String hello() {
-		return "hello world";
-	}
+	// @RequestMapping(value ="/")
+	// public String hello() {
+	// 	return "login";
+	// }
 	
 
 }
