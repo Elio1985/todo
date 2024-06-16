@@ -1,5 +1,10 @@
 /* login */
 
+body{
+    display: flex;
+    margin: 0;
+}
+
 .left{
     display: flex;
     height: 100vh;
@@ -11,13 +16,21 @@
     height: 100vh;
     width: 40%;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
 
 input{
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: auto;
     box-sizing: border-box;
     border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.n2{
+    margin: 8px 10px;
 }
