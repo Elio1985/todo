@@ -1,21 +1,29 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="/src/main/resources/static/todo.css" rel="stylesheet"> -->
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <form style="background-color: gray;">
-            <div>
-
-            </div>
-            <div>
-                
-            </div>
-        </form>
-    </div>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en"  xmlns="http://thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/login-signin.css" rel="stylesheet">
+        <title>Sign in</title>
+    </head>
+    <body>
+        <div class="left" style="background-color: aqua;">
+            <img src="">
+        </div>
+        <div class="right" style="background-color: rgb(112, 112, 112);">
+            <form name="login" method="post" th:action="@{processLogin}" th:object="${loginModel}">
+                <div class="n2">
+                    <!-- <label  class="form-label">Username</label> -->
+                    <input type="text" class="form-control" aria-label="Username" placeholder="Username" min="4" max="10">
+                </div>
+                <div class="n2">
+                    <!-- <label  class="form-label">Password</label> -->
+                    <input type="password" class="form-control" aria-label="Password" placeholder="Password" min="8" max="15">
+                </div>
+                <div class="n2">
+                    <button type="submit" class="btn-login">Sign in</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>
